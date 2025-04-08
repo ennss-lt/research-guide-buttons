@@ -22,7 +22,7 @@
 
 .iconpanel:hover {
   background-color: #EFE5F5;
-  transform: scale(1.015);
+  transform: scale(1.02);
   text-decoration: none;
   color: #470A68;
 }
@@ -44,9 +44,7 @@
   font-size: 70px;
 }
 
-.iconpanel .fa,
-.iconpanel .fas,
-.iconpanel .material-symbols-outlined {
+.iconpanel .fa {
   font-size: inherit;
   color: inherit;
 }
@@ -141,11 +139,11 @@
 
 /* === Custom overlay styles for specific image buttons === */
 .image-text-strategies {
-  background: rgba(197, 0, 62, 0.6);
+  background: rgba(71, 10, 104, 0.6);
 }
 
 .image-text-rdm {
-  background: rgba(71, 10, 104, 0.6);
+  background: rgba(197, 0, 62, 0.6);
 }
 
 /* === Grid layout for equal-height column buttons === */
