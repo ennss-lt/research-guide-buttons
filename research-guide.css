@@ -6,12 +6,13 @@
   margin-bottom: 3rem;
 }
 
-/* === Full-width iconpanel button styling === */
+/* === Base styling for all iconpanel buttons === */
 .iconpanel {
   display: block;
   background-color: #D8CCE4;
   color: #470A68;
-  padding: 1rem 1.5rem; 
+  padding: 1rem 1.5rem;
+  padding-bottom: 1rem; /* consistent bottom padding */
   border-radius: 6px;
   text-decoration: none;
   transition: background-color 0.2s ease, transform 0.2s ease;
@@ -22,16 +23,16 @@
 
 .iconpanel:hover {
   background-color: #EFE5F5;
-  transform: scale(1.02);
-  text-decoration: none;
+  transform: scale(1.03);
   color: #470A68;
+  text-decoration: none;
 }
 
 .iconpanel:hover * {
   color: inherit;
 }
 
-/* === Internal layout for iconpanel content === */
+/* === Internal layout for iconpanel button content === */
 .iconinfo {
   display: flex;
   align-items: center;
@@ -55,10 +56,10 @@
 }
 
 .icontext {
-  line-height: 1.3; 
+  line-height: 1.3;
 }
 
-/* === Adjust spacing within button content to reduce extra bottom space === */
+/* === Vertical alignment for button text block === */
 .iconpanel .iconinfo > div {
   display: flex;
   flex-direction: column;
@@ -70,13 +71,7 @@
   margin-bottom: 0;
 }
 
-/* === Apply consistent bottom padding to all buttons === */
-.iconpanel-grid .iconpanel,
-.iconpanel-container .iconpanel {
-  padding-bottom: 1rem;
-}
-
-/* === Image button styling === */
+/* === Image button layout and behavior === */
 .image-button {
   position: relative;
   display: block;
@@ -90,7 +85,7 @@
 }
 
 .image-button:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
 .image-button.half {
@@ -103,7 +98,7 @@
   }
 }
 
-/* === Maintain aspect ratio of image buttons === */
+/* === Maintain consistent aspect ratio for image buttons === */
 .image-wrapper {
   aspect-ratio: 16 / 9;
   width: 100%;
@@ -137,7 +132,7 @@
   text-decoration: underline;
 }
 
-/* === Custom overlay styles for specific image buttons === */
+/* === Custom background colors for image text overlays === */
 .image-text-strategies {
   background: rgba(71, 10, 104, 0.6);
 }
@@ -146,7 +141,7 @@
   background: rgba(197, 0, 62, 0.6);
 }
 
-/* === Grid layout for equal-height column buttons === */
+/* === Grid layout for two-column, equal-height iconpanel buttons === */
 .iconpanel-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -161,6 +156,7 @@
   }
 }
 
+/* === Styling for column iconpanel buttons === */
 .iconpanel-grid .iconpanel {
   background-color: #ffffff;
   color: #470A68;
@@ -171,7 +167,7 @@
   align-self: stretch;
 }
 
-/* === Hover effect for column buttons === */
+/* === Hover behavior for column iconpanel buttons === */
 .iconpanel-grid .iconpanel:hover {
   background-color: #D8CCE4;
 }
